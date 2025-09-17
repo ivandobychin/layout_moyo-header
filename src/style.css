@@ -1,14 +1,8 @@
-@import 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap';
 
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .header {
@@ -44,7 +38,7 @@ body {
   margin-right: 0;
 }
 
-.header__nav-item a {
+.header__nav-link {
   position: relative;
   display: flex;
   align-items: center;
@@ -54,16 +48,16 @@ body {
   height: 60px;
 }
 
-.header__nav-item a:hover,
-.header__nav-item a.is-active {
+.header__nav-link:hover,
+.header__nav-link.is-active {
   color: #00acdc;
 }
 
-.header__nav-item a.is-active::after {
+.header__nav-link.is-active::after {
   opacity: 1;
 }
 
-.header__nav-item a::after {
+.header__nav-link::after {
   content: '';
   display: block;
   position: absolute;
